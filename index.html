@@ -1,1 +1,7 @@
-<h1> hello Oj!</h1>
+<div id="observablehq-09ebd35a"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/5546b13510552cf2.js?v=3";
+const inspect = Inspector.into("#observablehq-09ebd35a");
+(new Runtime).module(define, name => (name === "canvas") && inspect());
+</script>
